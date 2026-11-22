@@ -1,0 +1,90 @@
+census 2026-11-22T16:21:29Z ee=89
+node aletheia-core ip=100.88.154.1 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.56 ppm=-24.612 offset_ms=-15.675 jitter_ms=10.698 jitter_source=timesyncd-jitter score_ms=22.603 eligible=yes
+node ni-knight ip=100.93.140.59 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.56 ppm=-1.775 offset_ms=-0.452 jitter_ms=18.327 jitter_source=timesyncd-jitter score_ms=19.118 eligible=yes
+node plain-view ip=100.71.109.124 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.58 ppm=-28.624 offset_ms=-13.798 jitter_ms=67.279 jitter_source=timesyncd-jitter score_ms=80.681 eligible=yes
+node ashfall-haven ip=100.102.119.123 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-11.026 offset_ms=-5.275 jitter_ms=62.664 jitter_source=timesyncd-jitter score_ms=67.822 eligible=yes
+node elven-path ip=100.120.211.72 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=-27.000 jitter_ms=13.670 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node orchid-flow ip=100.65.205.17 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.58 ppm=-16.326 offset_ms=-17.606 jitter_ms=11.508 jitter_source=timesyncd-jitter score_ms=20.126 eligible=yes
+node halycon-vector ip=100.127.194.115 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=-28.752 jitter_ms=142.326 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node logos-prime ip=100.107.204.62 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-8.447 offset_ms=none jitter_ms=48.868 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node lighthouse-omen ip=100.112.181.52 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=none jitter_ms=107.219 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node free-fall ip=100.74.202.8 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=-0.851 jitter_ms=252.207 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node rock-mountain ip=100.69.163.95 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=none jitter_ms=130.549 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node west-lincoln ip=100.80.198.30 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=none jitter_ms=18.006 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node quacked-hill ip=100.109.77.116 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-11.263 offset_ms=none jitter_ms=81.076 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node jacked-kite ip=100.82.52.27 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-393.003 offset_ms=none jitter_ms=113.653 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node scroll-central ip=100.69.30.79 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.56 ppm=-8.679 offset_ms=-33.781 jitter_ms=52.133 jitter_source=timesyncd-jitter score_ms=59.156 eligible=yes
+node yeet-max ip=100.98.16.99 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=-79.293 jitter_ms=89.580 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node kaleidoscope-one ip=100.90.192.78 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=none jitter_ms=65.578 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node moon-beam ip=100.115.80.55 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=-95.958 jitter_ms=123.565 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node uncanny-valley ip=100.103.106.5 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.58 ppm=-28.845 offset_ms=-0.328 jitter_ms=44.699 jitter_source=timesyncd-jitter score_ms=56.847 eligible=yes
+node great-white ip=none reachable=no reason=no-address-in-record-and-key-refused
+end-census
+# note: the census block above (2026-11-22T16:22Z) was taken with a parser that dropped explicit + signs;
+# positive offsets/frequencies read as none in that block. Parser fixed; superseded by the next block.
+census 2026-11-22T16:24:07Z ee=90
+node aletheia-core ip=100.88.154.1 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.56 ppm=-24.612 offset_ms=-15.675 jitter_ms=10.698 jitter_source=timesyncd-jitter score_ms=22.603 eligible=yes
+node ni-knight ip=100.93.140.59 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.56 ppm=-1.775 offset_ms=-0.452 jitter_ms=18.327 jitter_source=timesyncd-jitter score_ms=19.118 eligible=yes
+node plain-view ip=100.71.109.124 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.58 ppm=-28.624 offset_ms=-13.798 jitter_ms=67.279 jitter_source=timesyncd-jitter score_ms=80.681 eligible=yes
+node ashfall-haven ip=100.102.119.123 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-11.026 offset_ms=-5.275 jitter_ms=62.664 jitter_source=timesyncd-jitter score_ms=67.822 eligible=yes
+node elven-path ip=100.120.211.72 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=-27.000 jitter_ms=13.670 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node orchid-flow ip=100.65.205.17 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.58 ppm=-16.326 offset_ms=-17.606 jitter_ms=11.508 jitter_source=timesyncd-jitter score_ms=20.126 eligible=yes
+node halycon-vector ip=100.127.194.115 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=22.564 offset_ms=-28.752 jitter_ms=142.326 jitter_source=timesyncd-jitter score_ms=154.678 eligible=yes
+node logos-prime ip=100.107.204.62 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-8.447 offset_ms=6.028 jitter_ms=48.868 jitter_source=timesyncd-jitter score_ms=53.019 eligible=yes
+node lighthouse-omen ip=100.112.181.52 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=1.040 offset_ms=91.283 jitter_ms=107.219 jitter_source=timesyncd-jitter score_ms=116.784 eligible=yes
+node free-fall ip=100.74.202.8 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=81.089 offset_ms=-0.851 jitter_ms=252.207 jitter_source=timesyncd-jitter score_ms=286.349 eligible=yes
+node rock-mountain ip=100.69.163.95 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-148.102 offset_ms=53.405 jitter_ms=148.101 jitter_source=timesyncd-jitter score_ms=215.644 eligible=yes
+node west-lincoln ip=100.80.198.30 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=34.299 jitter_ms=18.006 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node quacked-hill ip=100.109.77.116 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-11.263 offset_ms=70.318 jitter_ms=81.076 jitter_source=timesyncd-jitter score_ms=92.838 eligible=yes
+node jacked-kite ip=100.82.52.27 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=-199.953 jitter_ms=131.005 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node scroll-central ip=100.69.30.79 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.56 ppm=-8.679 offset_ms=-33.781 jitter_ms=52.133 jitter_source=timesyncd-jitter score_ms=59.156 eligible=yes
+node yeet-max ip=100.98.16.99 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=-79.293 jitter_ms=89.580 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node kaleidoscope-one ip=100.90.192.78 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=65.499 offset_ms=33.020 jitter_ms=65.578 jitter_source=timesyncd-jitter score_ms=96.390 eligible=yes
+node moon-beam ip=100.115.80.55 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=40.594 offset_ms=10.170 jitter_ms=123.857 jitter_source=timesyncd-jitter score_ms=141.923 eligible=yes
+node uncanny-valley ip=100.103.106.5 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.58 ppm=-28.845 offset_ms=-0.328 jitter_ms=44.699 jitter_source=timesyncd-jitter score_ms=56.847 eligible=yes
+node great-white ip=none reachable=no reason=no-address-in-record-and-key-refused
+end-census
+census 2026-11-22T16:46:09Z ee=93
+node aletheia-core ip=100.88.154.1 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.56 ppm=none offset_ms=26.507 jitter_ms=12.867 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node ni-knight ip=100.93.140.59 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.56 ppm=0.465 offset_ms=9.173 jitter_ms=15.065 jitter_source=timesyncd-jitter score_ms=16.178 eligible=yes
+node plain-view ip=100.71.109.124 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.58 ppm=-36.067 offset_ms=-20.325 jitter_ms=56.547 jitter_source=timesyncd-jitter score_ms=73.728 eligible=yes
+node ashfall-haven ip=100.102.119.123 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=none offset_ms=-74.859 jitter_ms=68.150 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node elven-path ip=100.120.211.72 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-23.804 offset_ms=-5.896 jitter_ms=12.265 jitter_source=timesyncd-jitter score_ms=22.852 eligible=yes
+node orchid-flow ip=100.65.205.17 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.58 ppm=-16.326 offset_ms=-17.606 jitter_ms=11.508 jitter_source=timesyncd-jitter score_ms=20.126 eligible=yes
+node halycon-vector ip=100.127.194.115 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=15.745 offset_ms=-27.930 jitter_ms=80.568 jitter_source=timesyncd-jitter score_ms=89.974 eligible=yes
+node logos-prime ip=100.107.204.62 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-12.056 offset_ms=-9.857 jitter_ms=49.199 jitter_source=timesyncd-jitter score_ms=55.248 eligible=yes
+node lighthouse-omen ip=100.112.181.52 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-7.934 offset_ms=-36.759 jitter_ms=71.230 jitter_source=timesyncd-jitter score_ms=78.238 eligible=yes
+node free-fall ip=100.74.202.8 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=81.089 offset_ms=-0.851 jitter_ms=252.207 jitter_source=timesyncd-jitter score_ms=286.349 eligible=yes
+node rock-mountain ip=100.69.163.95 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=120.805 offset_ms=-99.490 jitter_ms=142.610 jitter_source=timesyncd-jitter score_ms=203.297 eligible=yes
+node west-lincoln ip=100.80.198.30 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-17.516 offset_ms=24.952 jitter_ms=19.929 jitter_source=timesyncd-jitter score_ms=29.781 eligible=yes
+node quacked-hill ip=100.109.77.116 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=-11.470 offset_ms=-0.848 jitter_ms=76.287 jitter_source=timesyncd-jitter score_ms=81.189 eligible=yes
+node jacked-kite ip=100.82.52.27 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=113.305 offset_ms=131.500 jitter_ms=235.212 jitter_source=timesyncd-jitter score_ms=295.950 eligible=yes
+node scroll-central ip=100.69.30.79 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.56 ppm=-8.679 offset_ms=-33.781 jitter_ms=52.133 jitter_source=timesyncd-jitter score_ms=59.156 eligible=yes
+node yeet-max ip=100.98.16.99 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=163.539 offset_ms=-48.815 jitter_ms=175.858 jitter_source=timesyncd-jitter score_ms=249.426 eligible=yes
+node kaleidoscope-one ip=100.90.192.78 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=55.735 offset_ms=-26.665 jitter_ms=65.208 jitter_source=timesyncd-jitter score_ms=91.283 eligible=yes
+node moon-beam ip=100.115.80.55 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=92.093 offset_ms=105.469 jitter_ms=108.916 jitter_source=timesyncd-jitter score_ms=158.142 eligible=yes
+node uncanny-valley ip=100.103.106.5 reachable=yes engine=systemd-timesyncd synced=yes server=185.125.190.58 ppm=-28.845 offset_ms=-0.328 jitter_ms=44.699 jitter_source=timesyncd-jitter score_ms=56.847 eligible=yes
+node great-white ip=none reachable=no reason=no-address-in-record-and-key-refused
+end-census
+census 2026-11-22T16:54:34Z ee=94
+node aletheia-core ip=100.88.154.1 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=-156.337 offset_ms=-18.044 jitter_ms=28.906 jitter_source=timesyncd-jitter score_ms=96.372 eligible=yes
+node ni-knight ip=100.93.140.59 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=-10.028 offset_ms=-5.373 jitter_ms=none jitter_source=none score_ms=none eligible=no
+node plain-view ip=100.71.109.124 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=399.679 offset_ms=22.748 jitter_ms=41.084 jitter_source=timesyncd-jitter score_ms=211.224 eligible=yes
+node ashfall-haven ip=100.102.119.123 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=71.303 offset_ms=40.480 jitter_ms=none jitter_source=none score_ms=none eligible=no
+node elven-path ip=100.120.211.72 reachable=yes engine=chrony synced=yes server=91.189.91.157 ppm=18.137 offset_ms=0.006 jitter_ms=5.147 jitter_source=chrony-rms-offset score_ms=12.765 eligible=yes
+node orchid-flow ip=100.65.205.17 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=-78.257 offset_ms=-56.073 jitter_ms=21.193 jitter_source=timesyncd-jitter score_ms=59.668 eligible=yes
+node halycon-vector ip=100.127.194.115 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=-252.964 offset_ms=30.724 jitter_ms=48.989 jitter_source=timesyncd-jitter score_ms=158.306 eligible=yes
+node logos-prime ip=100.107.204.62 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=-228.009 offset_ms=20.978 jitter_ms=42.569 jitter_source=timesyncd-jitter score_ms=140.431 eligible=yes
+node lighthouse-omen ip=100.112.181.52 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=99.790 offset_ms=27.782 jitter_ms=37.559 jitter_source=timesyncd-jitter score_ms=82.249 eligible=yes
+node free-fall ip=100.74.202.8 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=500.000 offset_ms=62.341 jitter_ms=85.009 jitter_source=timesyncd-jitter score_ms=301.243 eligible=yes
+node rock-mountain ip=100.69.163.95 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=-89.736 offset_ms=-28.967 jitter_ms=10.948 jitter_source=timesyncd-jitter score_ms=51.534 eligible=yes
+node west-lincoln ip=100.80.198.30 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=-167.614 offset_ms=-0.218 jitter_ms=27.546 jitter_source=timesyncd-jitter score_ms=97.966 eligible=yes
+node quacked-hill ip=100.109.77.116 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=53.588 offset_ms=-38.408 jitter_ms=35.122 jitter_source=timesyncd-jitter score_ms=61.470 eligible=yes
+node jacked-kite ip=100.82.52.27 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=119.500 offset_ms=6.344 jitter_ms=226.257 jitter_source=timesyncd-jitter score_ms=277.081 eligible=yes
+node scroll-central ip=100.69.30.79 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=none offset_ms=176.883 jitter_ms=133.375 jitter_source=timesyncd-jitter score_ms=none eligible=no
+node yeet-max ip=100.98.16.99 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=-356.428 offset_ms=36.754 jitter_ms=63.129 jitter_source=timesyncd-jitter score_ms=216.504 eligible=yes
+node kaleidoscope-one ip=100.90.192.78 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=500.000 offset_ms=143.092 jitter_ms=158.717 jitter_source=timesyncd-jitter score_ms=383.026 eligible=yes
+node moon-beam ip=100.115.80.55 reachable=yes engine=systemd-timesyncd synced=yes server=91.189.91.157 ppm=92.093 offset_ms=105.469 jitter_ms=108.916 jitter_source=timesyncd-jitter score_ms=158.142 eligible=yes
+node uncanny-valley ip=100.103.106.5 reachable=yes engine=systemd-timesyncd synced=yes server=100.120.211.72 ppm=-413.931 offset_ms=11.017 jitter_ms=115.549 jitter_source=timesyncd-jitter score_ms=290.502 eligible=yes
+node great-white ip=none reachable=no reason=no-address-in-record-and-key-refused
+end-census

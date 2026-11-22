@@ -1,0 +1,10 @@
+[Unit]
+Description=exobrain round runner — minute tick (assembles once per EE-aligned round)
+
+[Timer]
+OnCalendar=*:*:00
+AccuracySec=5s
+Unit=exobrain-round.service
+
+[Install]
+WantedBy=timers.target

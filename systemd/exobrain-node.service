@@ -1,0 +1,8 @@
+[Unit]
+Description=exobrain node agent — measure own clock, append atom to shared register
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/exobrain
+ExecStart=/usr/bin/python3 %h/exobrain/node_agent.py --tick

@@ -1,0 +1,8 @@
+[Unit]
+Description=exobrain round runner — assemble census block, compute election/consensus/blend/detector from the shared register
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/exobrain
+ExecStart=/usr/bin/python3 %h/exobrain/run_round.py --tick

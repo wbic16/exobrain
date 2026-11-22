@@ -1,0 +1,6 @@
+drift 2026-11-22T16:32:35Z day=2026-11-22 censuses=2 superseded_excluded=0 avg_drift_ppm=-12.759 avg_drift_ms_per_day=-1102.4 mean_consensus_offset_ms=-15.675 voters=12 eligible=15 verdict=within-tolerance
+# note: the drift atom above (2026-11-22T16:32:35Z) wrongly included the superseded
+# 16:21:29Z census block — the note parser checked only the first line of the
+# register's two-line superseded note. Parser fixed; superseded by the next atom.
+drift 2026-11-22T16:32:48Z day=2026-11-22 censuses=1 superseded_excluded=1 avg_drift_ppm=-12.084 avg_drift_ms_per_day=-1044.0 mean_consensus_offset_ms=-15.675 voters=12 eligible=15 verdict=within-tolerance
+drift 2026-11-22T16:56:10Z day=2026-11-22 censuses=3 superseded_excluded=1 avg_drift_ppm=-5.914 avg_drift_ms_per_day=-511.0 mean_consensus_offset_ms=-7.188 voters=13 eligible=16 verdict=within-tolerance

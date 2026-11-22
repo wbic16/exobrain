@@ -1,0 +1,34 @@
+sampling 2026-11-22T16:32:51Z ee=91 collector=htch-runtime collector_ppm=none collector_offset=none rounds=3 method=cristian-min-delay
+sample node=aletheia-core ip=100.88.154.1 ok=yes offset_vs_collector_ms=2239.821 best_delay_ms=2291.927 bound_ms=1145.963
+sample node=ashfall-haven ip=100.102.119.123 ok=yes offset_vs_collector_ms=2330.082 best_delay_ms=2508.995 bound_ms=1254.498
+sample node=elven-path ip=100.120.211.72 ok=yes offset_vs_collector_ms=2533.830 best_delay_ms=2812.702 bound_ms=1406.351
+sample node=free-fall ip=100.74.202.8 ok=yes offset_vs_collector_ms=2844.527 best_delay_ms=3808.667 bound_ms=1904.334
+sample node=halycon-vector ip=100.127.194.115 ok=yes offset_vs_collector_ms=2249.320 best_delay_ms=2201.367 bound_ms=1100.683
+sample node=jacked-kite ip=100.82.52.27 ok=yes offset_vs_collector_ms=3170.599 best_delay_ms=4559.424 bound_ms=2279.712
+sample node=kaleidoscope-one ip=100.90.192.78 ok=yes offset_vs_collector_ms=3774.793 best_delay_ms=5484.241 bound_ms=2742.120
+sample node=lighthouse-omen ip=100.112.181.52 ok=yes offset_vs_collector_ms=2775.276 best_delay_ms=3212.792 bound_ms=1606.396
+sample node=logos-prime ip=100.107.204.62 ok=yes offset_vs_collector_ms=2615.159 best_delay_ms=3071.269 bound_ms=1535.635
+sample node=moon-beam ip=100.115.80.55 ok=yes offset_vs_collector_ms=2656.564 best_delay_ms=3345.935 bound_ms=1672.968
+sample node=ni-knight ip=100.93.140.59 ok=yes offset_vs_collector_ms=2891.309 best_delay_ms=4081.487 bound_ms=2040.743
+sample node=orchid-flow ip=100.65.205.17 ok=yes offset_vs_collector_ms=2133.908 best_delay_ms=1992.952 bound_ms=996.476
+sample node=plain-view ip=100.71.109.124 ok=yes offset_vs_collector_ms=2212.159 best_delay_ms=2345.940 bound_ms=1172.970
+sample node=quacked-hill ip=100.109.77.116 ok=yes offset_vs_collector_ms=2563.349 best_delay_ms=2855.966 bound_ms=1427.983
+sample node=rock-mountain ip=100.69.163.95 ok=yes offset_vs_collector_ms=2096.980 best_delay_ms=2379.043 bound_ms=1189.522
+sample node=scroll-central ip=100.69.30.79 ok=yes offset_vs_collector_ms=2138.034 best_delay_ms=2152.797 bound_ms=1076.398
+sample node=uncanny-valley ip=100.103.106.5 ok=yes offset_vs_collector_ms=1757.628 best_delay_ms=1287.300 bound_ms=643.650
+sample node=west-lincoln ip=100.80.198.30 ok=yes offset_vs_collector_ms=2043.217 best_delay_ms=1919.003 bound_ms=959.502
+sample node=yeet-max ip=100.98.16.99 ok=yes offset_vs_collector_ms=2266.402 best_delay_ms=2380.492 bound_ms=1190.246
+crosscheck nodes=19 median_delta_ms=2345.695 max_deviation_ms=1396.078 max_deviation_node=kaleidoscope-one
+end-sampling
+# method probe (same afternoon, 3 nodes x 4 exchanges, persistent ssh connection):
+# first exchange pays connection setup (delay 1651-4692 ms); reused-connection
+# exchanges run 192-1230 ms with offset estimates stable within ~80-160 ms per node.
+# Best single bound: orchid-flow offset_vs_collector +1274.0 ms at delay 191.8 ms
+# (bound +/-96 ms). ni-knight reused: +1167.6..+1329.6 ms. kaleidoscope-one reused:
+# +1449.0..+1607.1 ms. Collector caveat, verified locally: this VM (htch-runtime)
+# has NO active time discipline — systemd-timesyncd and chrony both inactive,
+# timedatectl cannot reach the bus. The census puts the fleet -15.675 ms from
+# network time, so the ~+1.3 s fleet-vs-collector gap is the collector's own
+# error, not the fleet's. Sampling from an undisciplined collector measures the
+# collector. See DESIGN.md, Mode 2, Sampling.
+end-sampling-note

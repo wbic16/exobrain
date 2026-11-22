@@ -1,0 +1,3 @@
+election 2026-11-22T16:26:04Z census=2026-11-22T16:24:07Z ee=90 master=ni-knight master_score_ms=19.118 master_ppm=-1.775 runner_up=orchid-flow runner_up_score_ms=20.126 rule=lowest-score eligible=15
+election 2026-11-22T16:47:55Z census=2026-11-22T16:46:09Z ee=93 master=ni-knight master_score_ms=16.178 master_ppm=0.465 runner_up=orchid-flow runner_up_score_ms=20.126 rule=lowest-score eligible=17
+election 2026-11-22T16:56:10Z census=2026-11-22T16:54:34Z ee=94 master=elven-path master_score_ms=12.765 master_ppm=18.137 runner_up=rock-mountain runner_up_score_ms=51.534 rule=incumbent-ineligible-or-dark eligible=16

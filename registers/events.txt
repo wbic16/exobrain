@@ -1,0 +1,11 @@
+# Quantum Time Sync — known-work events for the time-stream detector.
+# The fleet's own work is the EXPECTED signal class in the stream:
+# dispatched workloads drive DVFS frequency transitions and load, which
+# stamp into node jitter and correction behaviour (Will, 2026-11-22).
+# The detector (listen.py) checks every candidate detection against
+# this record: a detection inside an event's window and scope is
+# emitted with explained=<kind> — structure, accounted for. What is
+# left unexplained is the residue the listening exists for.
+# Format: event from=<iso> to=<iso> scope=fleet|node:<name> kind=<slug> note=<free text, last field>
+event from=2026-11-22T16:44:00Z to=2026-11-22T17:00:00Z scope=fleet kind=qts-apply note=Quantum Time Sync applied fleet-wide (task 26.6.11/8.7.14/8.6.10): followers re-pointed to the conduit (elven-path, chrony), ni-knight steering tightened. Source switches force every re-pointed daemon to re-converge: large frequency corrections and offset scatter in the first census after the switch are the apply's own signature, expected, mechanism named.
+event from=2026-11-20T00:00:00Z to=2026-11-22T23:59:59Z scope=node:aletheia-core kind=dispatched-build note=RH artifact Lean build (Paper 032 build leg) running on the hub through the calibration window; verified alive before and after the QTS apply on 2026-11-22. Sustained multi-core load on the hub is dispatched work: elevated jitter and correction activity there are workload-explained. Window end is the last verified-alive time, not a claim the build ended then.

@@ -1,0 +1,10 @@
+[Unit]
+Description=exobrain node agent — minute tick (emits once per EE-aligned round)
+
+[Timer]
+OnCalendar=*:*:00
+AccuracySec=5s
+Unit=exobrain-node.service
+
+[Install]
+WantedBy=timers.target

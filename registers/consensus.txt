@@ -1,0 +1,3 @@
+consensus 2026-11-22T16:32:33Z census=2026-11-22T16:24:07Z ee=90 formed=yes eligible=15 trimmed=3 trimmed_nodes=halycon-vector,rock-mountain,free-fall voters=12 offset_ms=-15.675 drift_ppm=-12.084 spread_ms=18.390 rule=trim20-inverse-variance-weighted-median
+consensus 2026-11-22T16:47:55Z census=2026-11-22T16:46:09Z ee=93 formed=yes eligible=17 trimmed=3 trimmed_nodes=yeet-max,free-fall,jacked-kite voters=14 offset_ms=-5.896 drift_ppm=-10.274 spread_ms=17.873 rule=trim20-inverse-variance-weighted-median
+consensus 2026-11-22T16:56:10Z census=2026-11-22T16:54:34Z ee=94 formed=yes eligible=16 trimmed=3 trimmed_nodes=uncanny-valley,free-fall,kaleidoscope-one voters=13 offset_ms=0.006 drift_ppm=4.616 spread_ms=17.331 rule=trim20-inverse-variance-weighted-median

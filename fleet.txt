@@ -1,0 +1,24 @@
+# Quantum Time Sync — fleet roster (name tailnet-ip), one per line.
+# Source: ~/workspace/ranch-network-fix/ census records (2026-11-21) + TOOLS.md.
+# great-white is NOT listed: it has no address in the fleet record and refuses
+# this VM's SSH key (TOOLS.md, 2026-11-17). It is recorded as unmeasurable in
+# every census until Will grants the key and an address enters the record.
+aletheia-core 100.88.154.1
+ni-knight 100.93.140.59
+plain-view 100.71.109.124
+ashfall-haven 100.102.119.123
+elven-path 100.120.211.72
+orchid-flow 100.65.205.17
+halycon-vector 100.127.194.115
+logos-prime 100.107.204.62
+lighthouse-omen 100.112.181.52
+free-fall 100.74.202.8
+rock-mountain 100.69.163.95
+west-lincoln 100.80.198.30
+quacked-hill 100.109.77.116
+jacked-kite 100.82.52.27
+scroll-central 100.69.30.79
+yeet-max 100.98.16.99
+kaleidoscope-one 100.90.192.78
+moon-beam 100.115.80.55
+uncanny-valley 100.103.106.5
