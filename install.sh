@@ -33,7 +33,7 @@ done
 APP="$HOME/exobrain"
 mkdir -p "$APP/state" "$HOME/.config/systemd/user"
 
-cp -a "$SRC"/*.py "$SRC"/*.md "$SRC"/fleet.txt "$SRC"/apply_follower.sh "$APP"/
+cp -a "$SRC"/*.py "$SRC"/*.md "$SRC"/fleet.txt "$SRC"/subsets.txt "$SRC"/apply_follower.sh "$APP"/
 [ -d "$SRC/publish" ] && cp -a "$SRC/publish" "$APP"/
 [ -d "$SRC/registers" ] && cp -a "$SRC/registers" "$APP"/
 chmod +x "$APP"/*.py "$APP"/apply_follower.sh 2>/dev/null || true

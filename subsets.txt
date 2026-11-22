@@ -1,0 +1,37 @@
+# Quantum Time Sync — triangulation partition (task 26.6.11/8.7.14/8.6.10).
+# Derived 2026-11-22 (EE 98) from the census register (clock quality) and a
+# link round measured the same hour: ICMP RTT from each surveyor candidate
+# to every fleet node, min of 3 pings (the house min-delay discipline).
+# Assignment rule: each node to the surveyor it hears best (lowest min-RTT),
+# balance cap 7 nodes per subset including the surveyor; overflow moves to
+# the next surveyor at the smallest min-RTT penalty. Held nodes (the QTS
+# 100 ms source-switch guard) are members on paper only: they stay on their
+# network source and do not vote in their subset's relative frame.
+# great-white is excluded: unreachable, no address in the fleet record.
+# Refresh path (do not freeze this file silently): derive_subsets.py
+# re-derives the surveyor selection from a register's census evidence
+# under the rule above and, with --measure-links, re-measures the RTT
+# table and re-applies the assignment rule; it writes a PROPOSED file
+# and a diff — replacing subsets.txt is a deliberate act, and if the
+# surveyor set changes, the applied timesyncd pointing and
+# triangulate.py's SURVEYOR_ORDER must change with it (TRIANGULATION.md).
+# Format: surveyor <subset> <node> <ip>   |   member <subset> <node> <ip> held=<yes|no>
+surveyor nk ni-knight 100.93.140.59
+member nk ashfall-haven 100.102.119.123 held=no
+member nk quacked-hill 100.109.77.116 held=no
+member nk scroll-central 100.69.30.79 held=no
+member nk yeet-max 100.98.16.99 held=no
+member nk uncanny-valley 100.103.106.5 held=no
+member nk moon-beam 100.115.80.55 held=yes
+surveyor ep elven-path 100.120.211.72
+member ep logos-prime 100.107.204.62 held=no
+member ep plain-view 100.71.109.124 held=no
+member ep west-lincoln 100.80.198.30 held=no
+member ep jacked-kite 100.82.52.27 held=yes
+surveyor of orchid-flow 100.65.205.17
+member of aletheia-core 100.88.154.1 held=no
+member of halycon-vector 100.127.194.115 held=no
+member of lighthouse-omen 100.112.181.52 held=no
+member of free-fall 100.74.202.8 held=no
+member of rock-mountain 100.69.163.95 held=no
+member of kaleidoscope-one 100.90.192.78 held=no

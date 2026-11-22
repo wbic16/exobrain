@@ -10,6 +10,10 @@ emission window closes, the runner:
      block in the shared register.txt — the exact block format the
      VM-era census.py wrote, so every downstream tool works unchanged.
   2. COMPUTES the round: election (elect.py), consensus (consensus.py),
+     triangulation (triangulate.py — the three-surveyor view of the
+     same census: subset consensuses chained through their surveyors,
+     the triangulated fleet offset, residuals, and the disagreement
+     verdict vs the 50 ms bound; atoms to the shared triangulation.txt),
      EMA blend (blend.py), and the time-stream detector (listen.py),
      all against the shared register files.
   3. Once per UTC day, on the first assembly of a new day, runs the
@@ -130,6 +134,22 @@ def run_chain(app_dir, shared_dir, do_drift_day=None):
          "--elections", os.path.join(shared_dir, "elections.txt")],
         ["consensus.py", "--register", reg,
          "--consensus-log", os.path.join(shared_dir, "consensus.txt")],
+        # Triangulation runs with --no-probe in the resident runner:
+        # the echolocation probe duty belongs to the surveyors (they
+        # run probe.py on themselves; triangulate.py's probe leg
+        # reaches them over ssh from the collector VM, and this host's
+        # ssh key is refused by the fleet peers, so the runner cannot
+        # drive it). The computation — subset consensuses, the
+        # triangulated value, residuals, watch, signature whistles —
+        # is a pure function of the register and runs here every
+        # round. Probes stay VM-side until the surveyor node agents
+        # emit echoes into the shared register themselves.
+        ["triangulate.py", "--register", reg,
+         "--subsets", os.path.join(app_dir, "subsets.txt"),
+         "--triangulation-log",
+         os.path.join(shared_dir, "triangulation.txt"),
+         "--detections-log", os.path.join(shared_dir, "detections.txt"),
+         "--no-probe"],
         ["blend.py",
          "--consensus-log", os.path.join(shared_dir, "consensus.txt"),
          "--blend-log", os.path.join(shared_dir, "blend.txt")],

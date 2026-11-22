@@ -28,6 +28,13 @@ of them:
   more than 10 nodes) trusts no single clock: the least accurate 20%
   of voters are trimmed, and the rest combine into consensus time by
   inverse-variance weighted median (offset) and weighted mean (drift).
+- **Triangulate.** Three surveyors (chrony nodes) each survey a
+  disjoint subset of the fleet; each subset's consensus is chained
+  through its surveyor to network time, and fleet time is the
+  weighted median of the three subset consensuses. The inter-surveyor
+  disagreement is a first-class atom every round: spread beyond the
+  50 ms bound appends an unexplained detection for the detector.
+  Design of record: [TRIANGULATION.md](TRIANGULATION.md).
 - **Blend.** An EMA blender (α = 0.35/round, γ = 0.5 toward network
   time, corrections bounded at 10 ms/round) manages the consensus so
   it stays tracked to network time without chasing each round's noise.
@@ -49,13 +56,27 @@ of them:
 node_agent.py   measures the node's own clock once per round and
                 appends its atom to the shared register
 run_round.py    (runner node) assembles each round's atoms into a
-                census block and computes election, consensus, blend,
-                detector, and the daily drift cross-reference
+                census block and computes election, consensus,
+                triangulation, blend, detector, and the daily drift
+                cross-reference
 census.py       the probe + atom format (the VM-era census walks the
                 fleet over ssh; node_agent reuses its parser locally)
 elect.py  consensus.py  blend.py  drift_check.py  listen.py
                 the round computation chain — pure functions of the
                 register, identical whoever runs them
+triangulate.py  the three-surveyor triangulation of the same census
+                (subset consensuses, triangulated offset, residuals,
+                watch rotation, signature whistles). The runner runs
+                it with --no-probe: the echolocation probe duty is
+                the surveyors' own (probe.py runs on a surveyor) and
+                its ssh leg cannot be driven from the hub, whose key
+                the fleet peers refuse — probes stay VM-side until
+                surveyor node agents emit echoes themselves
+probe.py        the echolocation probe (NTP Cristian exchanges, run
+                on a surveyor; echoes bound the offset error)
+subsets.txt     the surveyor partition — data, re-derivable at any
+                census; derive_subsets.py is the refresh path and
+                TRIANGULATION.md is the derivation of record
 sample.py       the photon-sampling leg (pairwise timestamp exchanges)
 apply_sync.py / apply_follower.sh
                 the DELIBERATE apply path: pointing a node's time
@@ -78,8 +99,9 @@ fleet.txt       the fleet roster (name, tailnet address)
   round's first 300 seconds.
 - The **live register** lives on the fleet NFS share at
   `/mnt/mirrorborn/shared/exobrain/` (orchid-flow): `register.txt`,
-  `elections.txt`, `consensus.txt`, `blend.txt`, `drift.txt`,
-  `detections.txt`, `events.txt`, and `inbox/<node>.txt` — each node
+  `elections.txt`, `consensus.txt`, `triangulation.txt`, `blend.txt`,
+  `drift.txt`, `detections.txt`, `events.txt`, and
+  `inbox/<node>.txt` — each node
   appends only its own inbox file, so there is no write contention.
   State lives in the open register; computation is a pure function of
   it, so **any node can run a round**.
